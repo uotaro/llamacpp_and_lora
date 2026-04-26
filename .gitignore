@@ -1,8 +1,8 @@
-logs/**
-model_gozaru_gguf/**
-model_gozaru_lora/**
-model_gozaru_marged/**
-outputs/**
-unsloth_compiled_cache/**
-
-
+.venv_wsl/
+.vs/
+logs/
+model_gozaru_gguf/
+model_gozaru_lora/
+model_gozaru_merged/
+outputs/
+unsloth_compiled_cache/
