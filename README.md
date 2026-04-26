@@ -1,0 +1,2 @@
+# llamacpp_and_lora
+Ubuntuローカルでのllamacppサーバー構築方法とLORA練習
