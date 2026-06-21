@@ -10,6 +10,7 @@ from typing import Generator
 from llama_cpp import Llama
 
 model_path = r"/home/ct1485/_local_wsl/08_tools/models/gguf/Llama-3.1-8B-Instruct-Q6_K.gguf"
+# model_path = r"/home/ct1485/_local_wsl/08_tools/models/gguf/Llama-3.3-8B-Instruct.Q4_K_S.gguf"
 # model_path = r"/home/ct1485/_local_wsl/02_study/20260222_llm/model_gozaru_gguf/model.gguf" # ファインチューニングしたござるモデル
 
 
@@ -24,7 +25,7 @@ def ask_local_llamacpp(llm, prompt) -> Generator[str, None, None]:
     """
     # メッセージの設定
     messages = [
-        { "role": "user", "content": "兵庫県姫路市でおすすめの観光スポットを5つ教えてください。" }
+        { "role": "user", "content": prompt }
     ]
 
     # llama-cpp-python の Llama クラスの create_chat_completion メソッドを呼び出して、ストリーミングで応答を取得
